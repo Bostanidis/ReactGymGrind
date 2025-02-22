@@ -27,9 +27,9 @@ export default function ExerciseCard(props) {
             </div>
 
             <div className='flex flex-col bg-slate-950 rounded gap-2'>
-                {exercise.description.split("___").map((val) => {
+                {exercise.description.split("___").map((val, index) => {
                     return (
-                        <div className='text-sm'>
+                        <div key={index} className='text-sm'>
                             {val}
                         </div>
                     )
